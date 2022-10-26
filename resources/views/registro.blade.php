@@ -2,13 +2,13 @@
 
 @section('contenido')
 
-    @if (session()->has('echo'))
-    {!!"<script> Swal.fire(
-        'Perfecto, Recordatorio anotado!',
-        'Presiona para continuar!',
-        'danger'
-        )</script> "!!}    
-    @endif
+@if (session()->has('echo'))
+{!!"<script> Swal.fire(
+    'Perfecto, Recordatorio anotado!',
+    'Presiona para continuar!',
+    'danger'
+    )</script> "!!}    
+@endif
 <style>
     h1{
         color: blue;
@@ -38,7 +38,6 @@
                 <div class="mb-3">
                 <label class="form-label fw-bold">Titulo</label>
                 <input class="form-control" type="text" name="txtTitulo" value="{{old('txtTitulo')}}"></input>
-                
                 <p class="text-danger fst-italic">
                     {{$errors->first('txtTitulo')}}
                 </p>
@@ -59,6 +58,7 @@
                     <p class="text-danger fst-italic">
                         {{$errors->first('txtLugar')}}
                     </p>
+                    
                     
                 </div>
                 <div class="input-group input-group-sm mb-3">

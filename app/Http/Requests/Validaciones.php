@@ -13,7 +13,7 @@ class Validaciones extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class Validaciones extends FormRequest
     public function rules()
     {
         return [
-            //
+            'txtTitulo'=>'required',
+            'txtRecordatorio'=>'required',
+            'txtLugar'=>'required',
+            'txtMotivo'=>'required'
+
         ];
     }
 }
