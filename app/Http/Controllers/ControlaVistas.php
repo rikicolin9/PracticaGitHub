@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Validaciones;
-use App\Http\Requests\validarRecordatorio;
 use Illuminate\Http\Request;
 
-class controladorVista extends Controller
+class ControlaVistas extends Controller
 {
-    //
     public function UsaRecordatorio(Validaciones $req){
         return redirect('Registro')->with('echo','Se guardo Correcto');
 

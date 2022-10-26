@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControlaVistas;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +22,5 @@ route::view('Registro','registro')->name('registro');
 route::view('Recordatorio','recordatorio')->name('recordatorio');
 
 
-Route::post('Recordatorios', [ControlaVista::class,'UsaRecordatorio'
+Route::post('Recordatorios', [ControlaVistas::class,'UsaRecordatorio'
 ])->name('Recordatorios.UsaRecordatorio');
