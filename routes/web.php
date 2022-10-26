@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+route::view('Registro','registro')->name('registro');
+route::view('Recordatorio','recordatorio')->name('recordatorio');
+
+
+Route::post('Recordatorios', [ControlaVista::class,'UsaRecordatorio'
+])->name('Recordatorios.UsaRecordatorio');

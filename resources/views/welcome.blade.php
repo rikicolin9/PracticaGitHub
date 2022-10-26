@@ -18,6 +18,15 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .btn-boton{
+                display: inline-block;
+                padding: .5rem 2rem;
+                border-radius: 8px;
+                background-color: rgba(93, 173, 226, 1);
+                margin: .5rem 0;   
+                font-size: .9rem;
+                color: white;  
+            }
         </style>
     </head>
     <body class="antialiased">
@@ -44,6 +53,7 @@
                         </g>
                     </svg>
                 </div>
+                <a class="btn-boton" type="button" href="{{route('registro')}}"> Acceso</a>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
